@@ -39,16 +39,16 @@ from traceback import print_tb
 # print("\nПоследние 2 строки:\n", df.tail(2))
 
 
-# sales = pd.DataFrame({
-#     'Дата': ['2026-01-01', '2026-01-02', '2026-01-03'],
-#     'Товар': ['Ноутбук', 'Мышь', 'Клавиатура'],
-#     'Цена': [1000, 25, 75],
-#     'Количество': [3, 10, 5]
-# })
-# sales.to_csv('sales.csv', index=False)
+sales = pd.DataFrame({
+    'Дата': ['2026-01-01', '2026-01-02', '2026-01-03'],
+    'Товар': ['Ноутбук', 'Мышь', 'Клавиатура'],
+    'Цена': [1000, 25, 75],
+    'Количество': [3, 10, 5]
+})
+sales.to_csv('sales.csv', index=False)
 #
 # # Читаем CSV
-# df_sales = pd.read_csv('sales.csv')
+df_sales = pd.read_csv('sales.csv')
 
 
 # print(df_sales.info())
