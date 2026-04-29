@@ -71,7 +71,7 @@ def generate_price(row):# функция расчёта цены
     return np.clip(price, 30000, 500000)  # ограничиваем диапазон
 
 df['median_house_value'] = df.apply(generate_price, axis=1).astype(int)
-# применяем функцию к каждой строке → получаем цену
+#применяем функцию к каждой строке → получаем цену
 
 # добавляем пропуски (2%)
 missing_idx = np.random.choice(df.index, size=int(n * 0.02), replace=False)
